@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func task3(low, high int) *[]int {
+func task3(low, high int) []int {
 	arr := []int{}
 	ans := []int{}
 	for i := range high + 1 {
@@ -32,5 +32,5 @@ func main() {
 	fmt.Println("Введите диапазон значений (минимальное и максимальное): ")
 	fmt.Scan(&low, &high)
 	ans := task3(low, high)
-	fmt.Println(*ans)
+	fmt.Println(ans)
 }
